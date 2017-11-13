@@ -1,0 +1,7 @@
+source https://nuget.org/api/v2
+
+nuget Fake
+nuget GitVersion.CommandLine
+nuget xunit.runner.console
+nuget xunit
+nuget NuGet.CommandLine

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AWright18.SimpleCSVExporter", "source\AWright18.SimpleCSVExporter\AWright18.SimpleCSVExporter.csproj", "{19371BC2-0588-4FA2-B611-F14C8B8E25AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWright18.SimpleCSVExporter.Tests", "tests\AWright18.SimpleCSVExporter.Tests\AWright18.SimpleCSVExporter.Tests.csproj", "{5EF70389-5090-4796-B250-57FCCD352E9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19371BC2-0588-4FA2-B611-F14C8B8E25AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19371BC2-0588-4FA2-B611-F14C8B8E25AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19371BC2-0588-4FA2-B611-F14C8B8E25AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19371BC2-0588-4FA2-B611-F14C8B8E25AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EF70389-5090-4796-B250-57FCCD352E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EF70389-5090-4796-B250-57FCCD352E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EF70389-5090-4796-B250-57FCCD352E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EF70389-5090-4796-B250-57FCCD352E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF70A018-A61B-4478-867E-F2EBCF3B2176}
+	EndGlobalSection
+EndGlobal
