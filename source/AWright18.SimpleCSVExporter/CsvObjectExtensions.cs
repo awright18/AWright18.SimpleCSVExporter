@@ -1,6 +1,6 @@
 using System;
 using System.Linq;
-
+using System.Reflection;
 namespace AWright18.SimpleCSVExporter
 {
     public static class CsvObjectExtensions
@@ -19,15 +19,18 @@ namespace AWright18.SimpleCSVExporter
             if (type == null)
             {
                 throw new ArgumentNullException(nameof(type));
-            }
-
-            var propertyNames = type.GetProperties().Select(p => p.Name);
-
-            var fields = propertyNames.Select(n => n.ToCsvField());
-
+            }        
+            var fields =  type.GetProperties()
+                .Select(p => p.GetHeaderFieldName())
+                .Select(p => p.ToCsvField());                
             var headerRow = String.Join(",", fields);
-
             return headerRow;
+        }
+
+        public static string GetHeaderFieldName(this PropertyInfo property)
+        {
+            var csvField = property.GetCustomAttributes<CsvFieldAttribute>().FirstOrDefault();
+            return csvField?.Name ?? property.Name;            
         }
     }
 

@@ -131,8 +131,6 @@ namespace AWright18.SimpleCSVExporter.Tests
             var original = "\"I have a comma, and spaces, and quotes\" \"";
             var expected = "\"\"I have a comma, and spaces, and quotes\"\" \"\"";
             var output = original.ToCsvField();
-            //System.Diagnostics.Debug.WriteLine(output);
-            
             Assert.Equal(expected,output); 
         }       
     }
